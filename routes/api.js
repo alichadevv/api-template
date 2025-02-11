@@ -30,7 +30,7 @@ loghandler = {
     error: {
         status: false,
         creator: `${creator}`,
-        message: 'Error Kak, Lapor Via WhatsApp wa.me/6285760451683'
+        message: 'Error Kak, Lapor Via WhatsApp wa.me/6281400346604'
     }
 }
 
@@ -149,7 +149,7 @@ loghandler = {
             })
         })
         router.get('/randomimage/husbu', async (req, res, next) => {
-	        let waif = (await axios.get(`https://raw.githubusercontent.com/Arya-was/endak-tau/main/husbu.json`)).data
+	        let waif = (await axios.get(`https://raw.githubusercontent.com/Xydlan/endak-tau/main/husbu.json`)).data
 	        let result = waif[Math.floor(Math.random() * (waif.length))]
 	        let data = await getBuffer(result)
             await fs.writeFileSync(__path +'/database/waifu.png', data)
@@ -158,7 +158,7 @@ loghandler = {
             await fs.unlinkSync(__path + '/database/waifu.png')
         })
         router.get('/randomimage/loli', async (req, res, next) => {
-	        let waif = (await axios.get(`https://raw.githubusercontent.com/Arya-was/endak-tau/main/loli.json`)).data
+	        let waif = (await axios.get(`https://raw.githubusercontent.com/Xydlan/endak-tau/main/loli.json`)).data
 	        let result = waif[Math.floor(Math.random() * (waif.length))]
 	        let data = await getBuffer(result)
             await fs.writeFileSync(__path +'/database/waifu.png', data)
@@ -167,7 +167,7 @@ loghandler = {
             await fs.unlinkSync(__path + '/database/waifu.png')
         })
         router.get('/randomimage/milf', async (req, res, next) => {
-	        let waif = (await axios.get(`https://raw.githubusercontent.com/Arya-was/endak-tau/main/milf.json`)).data
+	        let waif = (await axios.get(`https://raw.githubusercontent.com/Xydlan/endak-tau/main/milf.json`)).data
 	        let result = waif[Math.floor(Math.random() * (waif.length))]
 	        let data = await getBuffer(result)
             await fs.writeFileSync(__path +'/database/waifu.png', data)
@@ -176,7 +176,7 @@ loghandler = {
             await fs.unlinkSync(__path + '/database/waifu.png')
         })
         router.get('/randomimage/cosplay', async (req, res, next) => {
-	        let waif = (await axios.get(`https://raw.githubusercontent.com/Arya-was/endak-tau/main/cosplay.json`)).data
+	        let waif = (await axios.get(`https://raw.githubusercontent.com/Xydlan/endak-tau/main/cosplay.json`)).data
             let result = waif[Math.floor(Math.random() * (waif.length))]
 	        let data = await getBuffer(result)
             await fs.writeFileSync(__path +'/database/waifu.png', data)
